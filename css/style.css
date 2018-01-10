@@ -1,4 +1,77 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
 body {
-  background-color: #dadada;
+  background-color: #ffffff;
   font-size: 10px;
+}
+
+.container {
+  width: 375px;
+}
+
+div {
+  float: left;
+  margin: 1% 0;
+  width: 100%;
+  padding: 20px 25px;
+  height: 260px;
+}
+
+/* code added to create two-column design */
+@media screen and (min-width: 575px){
+   div {
+    margin: 1%;
+    width: 48%;
+  }
+}
+
+/* code added to create four-column design */
+@media screen and (min-width: 991px){
+   div {
+    margin: .5%;
+    width: 24%;
+  }
+}
+
+h1 {
+  font-family: sans-serif;
+  font-size: 1.5em;
+  text-align: center;
+  padding: 5%;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-family: sans-serif;
+  font-size: 1.5em;
+  text-align: left;
+  top: 15%;
+  left: 10%;
+  width: 100%;
+}
+
+.preview-baku {
+  background-image: url('../images/baku.jpg');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.preview-london {
+  background-image: url('../images/london.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.preview-madrid {
+  background-image: url('../images/madrid.jpg');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.preview-rome {
+  background-image: url('../images/rome.jpg');
+  background-size: contain;
+  background-repeat: no-repeat;
 }
